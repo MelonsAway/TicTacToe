@@ -1,31 +1,3 @@
-/*window.addEventListener('keydown', event => {
- if (event.key == "x") {
-
-   let para = document.createElement("p");
-   let node = document.createTextNode("string");
-   let element = document.getElementById("four");
-   para.appendChild(node);
-   para.replaceChild('string', 'string');
-   element.appendChild(para);
- }
-});
-*/
-/*window.addEventListener('click', result);
-function result() {
-console.log('test');
-}
-document.addEventListener('keydown', test);
-  function test() {
-      if (key.test == 'x') {
-
-    console.log('x');
-    } else if (test.key =='o') {
-    console.log('o');
-    } else {
-    console.log('no');
-  }
-}
-*/
 const player1 = 'X';
 const player2 = 'O';
 
@@ -35,12 +7,12 @@ startGame();
 function startGame() {
     origBoard = Array.from(Array(9).keys());
     for (let i = 0; i < cells.length; i++) {
-  //      console.log('test1');
+//        console.log('test1');
         cells[i].innerText = '';
-        cells[i].style.removeProperty('background-color');
+//        cells[i].style.removeProperty('background-color');
         cells[i].addEventListener('click', turnClick, false);
     }
-    console.log('test');
+//    console.log('test');
     document.getElementById('text').innerText = '';
 }
   let counter = 0;
@@ -62,11 +34,11 @@ function turn(squareId, player) {
     document.getElementById(squareId).innerText = player;
     checkwin();
   } else {
-    console.log('nice try');
+//    console.log('nice try');
   }
 }
 function checkwin() {
-  console.log(origBoard[0]);
+//  console.log(origBoard[0]);
     if (origBoard[0] === origBoard[1]) {
     if (origBoard[1] === origBoard[2]) {
     wins();
@@ -109,9 +81,9 @@ function checkwin() {
 
   }
 }
-let winner = "You Won"
+let winner = " Won!"
 
 function wins () {
-  document.getElementById('text').innerText = winner;
-  console.log('test2');
+  document.getElementById('text').innerText = player + winner;
+//  console.log('test2');
 }
