@@ -35,10 +35,13 @@ startGame();
 function startGame() {
     origBoard = Array.from(Array(9).keys());
     for (let i = 0; i < cells.length; i++) {
+  //      console.log('test1');
         cells[i].innerText = '';
         cells[i].style.removeProperty('background-color');
         cells[i].addEventListener('click', turnClick, false);
     }
+    console.log('test');
+    document.getElementById('text').innerText = '';
 }
   let counter = 0;
 function turnClick(square) {
@@ -110,5 +113,5 @@ let winner = "You Won"
 
 function wins () {
   document.getElementById('text').innerText = winner;
-  console.log('test');
+  console.log('test2');
 }
