@@ -34,7 +34,7 @@ function turn(squareId, player) {
     document.getElementById(squareId).innerText = player;
     checkwin();
   } else {
-//    console.log('nice try');
+    window.alert('Someone already went there, cheater! Lose a turn');
   }
 }
 function checkwin() {
@@ -81,9 +81,9 @@ function checkwin() {
 
   }
 }
-let winner = " Won!"
 
 function wins () {
+  let winner = " Won!"
   document.getElementById('text').innerText = player + winner;
 //  console.log('test2');
 }

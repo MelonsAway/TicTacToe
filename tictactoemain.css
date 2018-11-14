@@ -44,8 +44,11 @@ table tr td:last-child {
 }
 
 .endgame {
+  display: block;
   position: absolute;
-  width: 200px;
+  left: 35%;
+  width: 30%;
   top: 400px;
-  left: 250px
   text-align: center;
+  font-size: 75px;
+  font-family: 'Impact', cursive, sans-serif;
